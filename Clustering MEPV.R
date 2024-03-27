@@ -255,6 +255,7 @@ DotPlot(object = MEPV_cells,
                                  order = 1)) 
 dev.off()
 
+saveRDS(MEPV_cells, "MEPV_cells.rds")
 
 
 
