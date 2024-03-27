@@ -248,5 +248,35 @@ dev.off()
 
 saveRDS(MEPV_cells, "MEPV_cells.rds")
 
+######Extended Figure 6 ###########
 
+pdf("output/ExtFig6_MEPV_Irf7.pdf", width = 9, height = 4.5)
+FeaturePlot_scCustom(seurat_object = MEPV_cells, features = c("Irf7"),
+                     num_columns = 4, reduction = "humap", alpha_exp = 0.75, na_color = "lightgray", na_cutoff = 0.1, split.by = "Sample.name_2") & NoAxes()
+dev.off()
+
+#####Extended Figure 7 #####
+
+FeaturePlot_scCustom(seurat_object = MEPV_cells, features = c("Tlr2", "Tlr3", "Tlr4"),
+                     num_columns = 1, reduction = "humap", alpha_exp = 0.75, na_color = "lightgray", na_cutoff = 0.5) 
+
+###### Extended Figure 8 ######
+pdf("output/Feature_MEPV_Cxcl10.pdf", width = 9, height = 4.5)
+FeaturePlot_scCustom(seurat_object = MEPV_cells, features = c("Cxcl10"),
+                     num_columns = 4, reduction = "humap", alpha_exp = 0.75, na_color = "lightgray", na_cutoff = 0.1, split.by = "Sample.name_2") & NoAxes()
+dev.off()
+
+#####Extended Figure 10######
+
+pdf("output/Ifng_tbet_MEPV.pdf", width = 7.23, height = 5.85)
+FeaturePlot_scCustom(seurat_object = MEPV_cells, features = c("Ifng", "Tbx21", "Ifngr1", "Ifngr2"),
+                     num_columns = 2, reduction = "humap", alpha_exp = 0.75, na_color = "lightgray", na_cutoff = 1)
+dev.off()
+
+#####Extended Figure 13b######
+pdf("output/Feature_MEPV_Hcar2.pdf", width = 5.1, height = 4.1)
+FeaturePlot_scCustom(seurat_object = MEPV_cells, features = c("Hcar2"),
+                     num_columns = 1, reduction = "humap", alpha_exp = 0.75, na_color = "lightgray", na_cutoff = 0.1) 
+
+dev.off()
 
