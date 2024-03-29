@@ -152,7 +152,7 @@ Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(17,32)))   
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(15)))              <- "Progenitors"
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(20)))              <- "Differentiating"
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(33,26,3,5,34)))     <- "Mature"
-#Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(27)))              <- "Lhb.Npy.Rax+"
+Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(27)))              <- "Lhb.Npy.Rax+"
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(7)))               <- "DMH tanycytes"
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(2)))               <- "VMH/dmARH tanycytes"
 Idents(object = MEPV_cells, cells = WhichCells(MEPV_cells, ident = c(9)))               <- "vmARH tanycytes"
